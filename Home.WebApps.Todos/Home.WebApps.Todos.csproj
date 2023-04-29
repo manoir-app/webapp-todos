@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\TodoApp.ts" />
+    <Content Remove="wwwroot\typings\jquery.d.ts" />
+    <Content Remove="wwwroot\typings\manoirApp.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ManoirApp.Home.Common" Version="1.1.1" />
+    <PackageReference Include="ManoirApp.Home.Common.Graph" Version="1.1.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\TodoApp.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-animate.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-resource.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-route.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\angular.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\jquery.d.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\manoirApp.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\TodoApp.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\TodoApp.js.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

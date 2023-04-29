@@ -1,0 +1,6 @@
+{
+  "Kind": "WebApps",
+  "Name": "Todo",
+  "ImageName": "webapps-todo",
+  "DockerFile": "DockerFile.Release"
+}
